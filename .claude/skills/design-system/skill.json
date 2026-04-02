@@ -1,0 +1,15 @@
+{
+  "name": "ckm:design-system",
+  "description": "Token架构、组件规范、系统化设计、幻灯片生成。三层Token体系(primitive→semantic→component)、CSS变量、间距/排版规范、组件规范、品牌合规演示文稿。用于设计Token、系统化设计、品牌合规演示。",
+  "argument-hint": "[组件或Token名称]",
+  "license": "MIT",
+  "version": "1.0.0-cn",
+  "author": "claudekit (中文版: dxc-danny)",
+  "metadata": {
+    "author": "claudekit",
+    "version": "1.0.0",
+    "translated_by": "OpenClaw AI Assistant",
+    "translation_date": "2026-04-02"
+  },
+  "tags": ["design-system", "tokens", "ui-ux", "slides", "presentation", "中文版"]
+}
