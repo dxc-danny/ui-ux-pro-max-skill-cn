@@ -1,13 +1,6 @@
-<!--
-  翻译说明：
-  本文件为语义Tokens参考文档的中文翻译版。
-  原文：Semantic Tokens - Purpose-based aliases referencing primitive tokens.
-  翻译：语义Tokens - 引用原始Tokens的用途别名。
--->
+# Semantic Token
 
-# 语义Tokens
-
-引用原始Tokens的用途别名。
+基于用途的别名，引用 Primitive Token。
 
 ## 颜色语义
 
@@ -68,7 +61,7 @@
 }
 ```
 
-### 破坏性/危险色
+### 破坏性色
 
 ```css
 :root {
@@ -96,7 +89,7 @@
 }
 ```
 
-### 边框与轮廓环
+### 边框与环
 
 ```css
 :root {
@@ -127,7 +120,7 @@
 }
 ```
 
-## 排版语义
+## 字体语义
 
 ```css
 :root {
@@ -156,10 +149,10 @@
   --ring-offset: 2px;
   --ring-color: var(--color-ring);
 
-  /* 禁用状态透明度 */
+  /* 禁用时的透明度 */
   --opacity-disabled: 0.5;
 
-  /* 过渡动画 */
+  /* 过渡效果 */
   --transition-colors: color, background-color, border-color;
   --transition-transform: transform;
   --transition-all: all;
@@ -195,17 +188,17 @@
 
 ## 使用模式
 
-### 应用语义Tokens
+### 应用语义 Token
 
 ```css
-/* 好 - 使用语义tokens */
+/* 好 - 使用语义 Token */
 .card {
   background: var(--color-card);
   color: var(--color-card-foreground);
   border: 1px solid var(--color-border);
 }
 
-/* 差 - 直接使用原始tokens */
+/* 差 - 直接使用 Primitive Token */
 .card {
   background: var(--color-gray-50);
   color: var(--color-gray-900);
@@ -214,7 +207,7 @@
 
 ### 主题切换
 
-语义tokens支持即时主题切换：
+语义 Token 支持即时主题切换：
 
 ```js
 // 切换深色模式

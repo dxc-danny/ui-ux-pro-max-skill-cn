@@ -1,15 +1,8 @@
-<!--
-  翻译说明：
-  本文件为Tailwind集成参考文档的中文翻译版。
-  原文：Tailwind Integration - Map design system tokens to Tailwind CSS configuration.
-  翻译：Tailwind集成 - 将设计系统tokens映射到Tailwind CSS配置。
--->
+# Tailwind 集成
 
-# Tailwind集成
+将设计系统 Token 映射到 Tailwind CSS 配置。
 
-将设计系统tokens映射到Tailwind CSS配置。
-
-## CSS变量设置
+## CSS 变量设置
 
 ### 基础层
 
@@ -21,10 +14,10 @@
 
 @layer base {
   :root {
-    /* 原始层 */
+    /* Primitive */
     --color-blue-600: 37 99 235;  /* HSL: 217 91% 60% */
 
-    /* 语义层 */
+    /* Semantic */
     --background: 0 0% 100%;
     --foreground: 222 47% 11%;
     --primary: 217 91% 60%;
@@ -63,7 +56,7 @@
 }
 ```
 
-## Tailwind配置
+## Tailwind 配置
 
 ### tailwind.config.ts
 
@@ -119,22 +112,22 @@ const config: Config = {
 export default config
 ```
 
-## HSL格式优势
+## HSL 格式的优势
 
-使用不带函数的HSL允许透明度修饰符：
+使用空格分隔的 HSL 允许透明度修饰符：
 
 ```tsx
-// 使用HSL格式（空格分隔）
-<div className="bg-primary/50">   // 50%透明度
-<div className="text-primary/80"> // 80%透明度
+// 使用 HSL 格式（空格分隔）
+<div className="bg-primary/50">   // 50% 透明度
+<div className="text-primary/80"> // 80% 透明度
 
-// CSS输出
+// CSS 输出
 background-color: hsl(217 91% 60% / 0.5);
 ```
 
 ## 组件类
 
-### 按钮示例
+### Button 示例
 
 ```css
 @layer components {
@@ -185,7 +178,7 @@ background-color: hsl(217 91% 60% / 0.5);
 theme: {
   extend: {
     spacing: {
-      // 如需要可映射到CSS变量
+      // 如需要可映射到 CSS 变量
       'section': 'var(--spacing-section)',
       'component': 'var(--spacing-component)',
     }
@@ -193,7 +186,7 @@ theme: {
 }
 ```
 
-## 动画Tokens
+## 动画 Token
 
 ```typescript
 // tailwind.config.ts
@@ -236,23 +229,23 @@ if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
 }
 ```
 
-## shadcn/ui对齐
+## 与 shadcn/ui 对齐
 
-此配置与shadcn/ui约定对齐：
+此配置与 shadcn/ui 规范对齐：
 
-- 相同的CSS变量命名
-- 相同的HSL格式
-- 相同的颜色色阶结构
-- 兼容 `npx shadcn@latest add` 命令
+- 相同的 CSS 变量命名
+- 相同的 HSL 格式
+- 相同的色彩阶度结构
+- 与 `npx shadcn@latest add` 命令兼容
 
-### 与shadcn/ui一起使用
+### 与 shadcn/ui 一起使用
 
 ```bash
-# 初始化（使用相同的token结构）
+# 初始化（使用相同的 Token 结构）
 npx shadcn@latest init
 
-# 添加组件（使用这些tokens样式）
+# 添加组件（使用这些 Token 样式）
 npx shadcn@latest add button card input
 ```
 
-组件将自动使用您的设计系统tokens。
+组件将自动使用您的设计系统 Token。

@@ -1,15 +1,8 @@
-<!--
-  翻译说明：
-  本文件为组件Tokens参考文档的中文翻译版。
-  原文：Component Tokens - Component-specific tokens referencing semantic layer.
-  翻译：组件Tokens - 引用语义层的组件特定tokens。
--->
+# Component Token
 
-# 组件Tokens
+组件特定的 Token，引用语义层。
 
-引用语义层的组件特定tokens。
-
-## 按钮Tokens
+## Button Token
 
 ```css
 :root {
@@ -33,7 +26,7 @@
   --button-ghost-fg: var(--color-foreground);
   --button-ghost-hover-bg: var(--color-accent);
 
-  /* 破坏性/危险 */
+  /* 破坏性 */
   --button-destructive-bg: var(--color-destructive);
   --button-destructive-fg: var(--color-destructive-foreground);
   --button-destructive-hover-bg: var(--color-destructive-hover);
@@ -53,7 +46,7 @@
 }
 ```
 
-## 输入框Tokens
+## Input Token
 
 ```css
 :root {
@@ -85,7 +78,7 @@
 }
 ```
 
-## 卡片Tokens
+## Card Token
 
 ```css
 :root {
@@ -108,7 +101,7 @@
 }
 ```
 
-## 徽章Tokens
+## Badge Token
 
 ```css
 :root {
@@ -124,7 +117,7 @@
   --badge-outline-border: var(--color-border);
   --badge-outline-fg: var(--color-foreground);
 
-  /* 破坏性/危险 */
+  /* 破坏性 */
   --badge-destructive-bg: var(--color-destructive);
   --badge-destructive-fg: var(--color-destructive-foreground);
 
@@ -136,7 +129,7 @@
 }
 ```
 
-## 提示/警告Tokens
+## Alert Token
 
 ```css
 :root {
@@ -145,7 +138,7 @@
   --alert-fg: var(--color-foreground);
   --alert-border: var(--color-border);
 
-  /* 破坏性/危险 */
+  /* 破坏性 */
   --alert-destructive-bg: var(--color-destructive);
   --alert-destructive-fg: var(--color-destructive-foreground);
 
@@ -155,11 +148,11 @@
 }
 ```
 
-## 对话框/模态框Tokens
+## Dialog/Modal Token
 
 ```css
 :root {
-  /* 遮罩层 */
+  /* 遮罩 */
   --dialog-overlay-bg: rgb(0 0 0 / 0.5);
 
   /* 内容 */
@@ -175,7 +168,7 @@
 }
 ```
 
-## 表格Tokens
+## Table Token
 
 ```css
 :root {
@@ -183,7 +176,7 @@
   --table-header-bg: var(--color-muted);
   --table-header-fg: var(--color-muted-foreground);
 
-  /* 表格行 */
+  /* 表格体 */
   --table-row-bg: var(--color-background);
   --table-row-hover-bg: var(--color-muted);
   --table-row-fg: var(--color-foreground);

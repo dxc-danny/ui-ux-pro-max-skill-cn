@@ -1,17 +1,10 @@
-<!--
-  翻译说明：
-  本文件为原始Tokens参考文档的中文翻译版。
-  原文：Primitive Tokens - Raw design values - foundation of the design system.
-  翻译：原始Tokens - 原始设计值 - 设计系统的基础。
--->
-
-# 原始Tokens
+# Primitive Token
 
 原始设计值 - 设计系统的基础。
 
-## 颜色色阶
+## 色彩阶度
 
-### 灰色色阶
+### 灰色阶
 
 ```css
 :root {
@@ -29,7 +22,7 @@
 }
 ```
 
-### 主色（蓝色）
+### 主色调（蓝色）
 
 ```css
 :root {
@@ -67,9 +60,9 @@
 }
 ```
 
-## 间距色阶
+## 间距系统
 
-4px基准单位系统。
+4px 基准单位系统。
 
 ```css
 :root {
@@ -97,11 +90,11 @@
 }
 ```
 
-## 排版色阶
+## 字体系统
 
 ```css
 :root {
-  /* 字体大小 */
+  /* 字号 */
   --font-size-xs:   0.75rem;   /* 12px */
   --font-size-sm:   0.875rem;  /* 14px */
   --font-size-base: 1rem;      /* 16px */
@@ -120,7 +113,7 @@
   --leading-relaxed: 1.625;
   --leading-loose:  2;
 
-  /* 字体粗细 */
+  /* 字重 */
   --font-weight-normal:   400;
   --font-weight-medium:   500;
   --font-weight-semibold: 600;
@@ -170,7 +163,7 @@
 }
 ```
 
-## 动画/时长
+## 动效/时长
 
 ```css
 :root {
@@ -190,7 +183,7 @@
 }
 ```
 
-## Z轴层级
+## Z-Index 层级
 
 ```css
 :root {
